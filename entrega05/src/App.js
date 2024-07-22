@@ -14,7 +14,8 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Productos agregarAlCarro={() => console.log('no hace nada')}
+      <Productos 
+      agregarAlCarro={() => console.log('no hace nada')}
       productos={this.state.productos}
       ></Productos>
     </div>
