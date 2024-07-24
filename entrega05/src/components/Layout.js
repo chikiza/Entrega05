@@ -7,6 +7,7 @@ const styles = {
         alingItems: 'center',
         display: 'flex',
         flexDirection: 'column',
+        alingItems: 'center',
     },
     container: {
         width: '1200px'
@@ -20,6 +21,7 @@ class Layout extends Component{
                 <div style={styles.container}>
                     {this.props.children}
                 </div>
+            
             </div>
         )
     }

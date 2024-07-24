@@ -3,7 +3,7 @@ import { Component } from "react";
 const styles = {
     button: {
         backgroundColor:'#0a283e',
-        cursor: 'pointer',
+        cursor:'pointer',
     }
 }
 class Button extends Component {
