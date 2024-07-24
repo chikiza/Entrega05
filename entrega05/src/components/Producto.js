@@ -1,4 +1,5 @@
 import { Component } from "react";
+import Button from "./Button";
 
 const styles = {
     producto: {
@@ -15,12 +16,13 @@ const styles = {
 
 class Producto extends Component {
     render() {
-        const { producto } = this.props
+        const { producto, agregarAlCarro } = this.props
         return (
             <div style={styles.producto}>
                 <img style={styles.img} alt={producto.name} src={producto.img}/>
                 <h3>{producto.name}</h3>
                 <p>{producto.price}</p>
+                <button onClick={()=>agregarAlCarro(producto)}>Agregar al Carro</button>
             </div>
         )
     }
